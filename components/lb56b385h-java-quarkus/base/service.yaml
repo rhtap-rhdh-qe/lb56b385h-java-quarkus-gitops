@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: lb56b385h-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: lb56b385h-java-quarkus 
+  name: lb56b385h-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: lb56b385h-java-quarkus 
